@@ -2,3 +2,15 @@
 .title{color:red;}
 <head><style type="text/css">
 <head> <link rel="stylesheet" href="main.css">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+        </style>
+
+     
+div{width:300px;
+}
+p{width: 100px;
+}
+<div><p>The red ballon is in the blue sky.</p>
+</div>
