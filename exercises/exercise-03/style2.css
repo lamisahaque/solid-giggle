@@ -1,0 +1,39 @@
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color:yellowgreen;
+}
+
+.normal {
+  padding: 50px 40px;
+  width: 100%;
+  line-height: 1.68;
+  column-count: 4;
+  column-gap: 10px;
+  column-rule-style: dashed hotpink (255, 253, 143);
+  row-gap: 2px;
+}
+
+.pullquote {
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-size: 3em;
+}
+
+.section {
+    font-family: "Libre Baskerville", serif;
+    text-transform: uppercase;
+    line-height: 1.55em;
+    text-align-last: center;
+    font-size: 90px;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+}

@@ -1,54 +1,39 @@
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 html, body {
     height: 100%;
 }
 
-.pullquote {
-    background-color: lemonchiffon;
-    height: 100%;
-}
+div {
+    column-count: 6;
+    column-gap: 2px;
+    column-rule: 3px solid gray(255, 253, 143)
+  }
 
-header{
-    height: 20%;
-    background-color: pink;
-}
-
-p {
-    color: black;
+.normal {
+    color: rgb(66, 66, 66);
     font-family: Roboto;
     font-weight: normal;
-    font-size: 24px;
-    text-transform: lowercase;
+    font-size: 14px;
+    text-transform:capitalize;
     text-decoration: none;
-    text-align:justify
+    text-align:right
     }
     
 .bold {
  font-weight: 900;
  font-style: italic;
- font-style:oblique;
+ font-style: oblique;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color:yellowgreen;
 }
 
 .container {
   padding: 20px 40px;
-  width: 50%;
-  line-height: 1.68;
-}
-
-h1 {
-  font-family: "Libre Baskerville", serif;
-  text-transform: capitalize;
-  font-size: 3.68em;
-  line-height: 1.4em;
+  width: 70%;
+  line-height: 2;
 }
 
 .pullquote {
@@ -57,4 +42,16 @@ h1 {
   font-style: italic;
   letter-spacing: 1px;
   font-size: 1.68em;
+  height: 100%;
+}
+
+.section {
+    font-family: "Libre Baskerville", serif;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    text-align-last: center;
+    font-size: 90px;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
 }
