@@ -1,3 +1,59 @@
-body {
-    background: tomato;
+/* this is the reset to remove html styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    background-color: lemonchiffon;
+    height: 100%;
+}
+
+header{
+    height: 20%;
+    background-color: pink;
+}
+
+nav, footer {
+    height: 10%;
+    background-color: aquamarine;
+}
+
+main{
+    width: 60%;
+    background-color: coral;
+}
+
+aside{
+    width: 20%;
+    height: 100%;
+    background-color: lightblue;
+    display: inline-block;
+    float: left;
+    
+}
+
+section {
+    width: 60%;
+    height: 100%;
+    background-color: gold;
+    display: inline-block;
+    float: left;
+
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    right: 150px;
+
+
 }
