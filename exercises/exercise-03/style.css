@@ -7,15 +7,14 @@ p {
     font-size: 24px;
     text-transform: lowercase;
     text-decoration: none;
-    text-align: left;
+    text-align:justify
     }
     
 .bold {
- font-weight: 700;
+ font-weight: 900;
  font-style: italic;
+ font-style:oblique;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap");
 
 body {
   font-family: "Open Sans", sans-serif;
