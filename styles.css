@@ -7,6 +7,34 @@ nav {
      justify-content: space-around;
      list-style: none;
      background-color: lavenderblush;
+     line-height: 60px;
+     animation-name: changeMe;
 
 
+
+ }
+
+ .container a {
+     text-decoration: none;
+     color: mediumpurple;
+
+ }
+
+ li:hover {
+     animation: changeMe 3s;
+ }
+
+ @keyframes changeMe{
+     0%{
+         background-coor: tomato;
+     }
+     50%{
+         background-coor:hotpink;
+     }
+     70%{
+         background-coor: blue;
+     }
+     100%{
+         background-coor: tomato;
+     }
  }
