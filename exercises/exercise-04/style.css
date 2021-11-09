@@ -4,10 +4,10 @@
     box-sizing: border-box;
 
 }
+
 html, body {
     height: 100%;
 }
-
 
 body {
   font-family: "Roboto", sans-serif;
@@ -20,8 +20,10 @@ body {
   line-height: 2;
   column-count: 4;
   column-gap: 15px;
-  border: 2px dashed hotpink;
-  
+  flex-basis: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction:column-reverse;  
 }
 
 .author {
@@ -29,6 +31,8 @@ body {
     text-decoration-style: wavy;
     font-stretch: expanded;
     font-size: 40px;
+    position: fixed;
+    top: 10%;
     
 }
 
@@ -44,19 +48,24 @@ body {
   align-self: flex-end;
 }
 .pullquote:hover {
-    color: hotpink;
-
+    color: greenyellow;
 }
 .section {
     font-family: "Libre Baskerville", serif;
     text-transform: uppercase;
-    line-height: 1.55em;
-    text-align-last: center;
-    font-size: 90px;
+    text-align-last: right;
+    font-size: 70px;
     font-style: oblique;
     width: 60%;
     height: 100%;
-    display: inline-block;
+    float: right;
+    height: 100%;
+    align-items:flex-end;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: fixed;
+    
 
 }
-
