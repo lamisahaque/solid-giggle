@@ -2,7 +2,8 @@ nav {
     height: 60px;
     box-sizing: border-box;
 }
- .nav {
+
+.navbar {
      display: flex;
      justify-content: space-around;
      list-style: none;
