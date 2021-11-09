@@ -1,0 +1,11 @@
+nav {
+    height: 60px;
+    box-sizing: border-box;
+}
+ .nav {
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+     background-color: lavenderblush;
+     line-height: 60px;
+ }

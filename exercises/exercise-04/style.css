@@ -44,6 +44,7 @@ body {
   font-size: 3em;
   text-align: right;
   flex: grow 4;
+  flex-wrap: nowrap;
   background: crimson;
   align-self: flex-end;
 }
