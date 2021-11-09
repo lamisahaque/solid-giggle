@@ -1,0 +1,24 @@
+main {
+    background-color: lemonchiffon;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .backwall {
+    width: 60%;
+    height: 300px;
+    background-color: tomato;
+    margin: auto;
+  }
+  
+  .floor {
+    border-bottom: 150px solid #c0392b;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    height: 0;
+    width: 60%;
+    margin: auto;
+  }
+  
