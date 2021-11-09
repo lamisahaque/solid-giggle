@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+html, body {
+    height: 100%;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color:yellowgreen;
+}
+
+.normal {
+  padding: 50px 50px;
+  width: 80%;
+  line-height: 2;
+  column-count: 4;
+  column-gap: 15px;
+  border: 2px dashed hotpink;
+  
+}
+
+.author {
+    text-align: center;
+    text-decoration-style: wavy;
+    font-stretch: expanded;
+    font-size: 40px;
+    
+}
+
+.pullquote {
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-size: 3em;
+  text-align: right;
+  flex: grow 4;
+  background: crimson;
+  align-self: flex-end;
+}
+.pullquote:hover {
+    color: hotpink;
+
+}
+.section {
+    font-family: "Libre Baskerville", serif;
+    text-transform: uppercase;
+    line-height: 1.55em;
+    text-align-last: center;
+    font-size: 90px;
+    font-style: oblique;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+
+}
+
