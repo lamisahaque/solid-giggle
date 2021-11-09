@@ -16,12 +16,13 @@ body {
     padding: 15px;
     display: grid;
     background-color: #a7aec0;
-    height: 150px;
+    height: 120px;
     width: 400px;
     align-items: center;
-    border: 3px solid white;
-    animation: bounceIn 2s ease-in-out;
-    animation-play-state: running; 
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
+    animation-play-state: paused; 
+  
     animation-fill-mode:none; 
 
   }
@@ -35,11 +36,11 @@ body {
     padding: 15px;
     display: grid;
     background-color: #a7aec0;
-    height: 100px;
+    height: 80px;
     width: 600px;
     align-items: center;
-    border: 3px solid white;
-    animation: bounceIn 2.5s ease-in-out;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
     animation-play-state: running; 
     animation-fill-mode:none; 
   }
@@ -56,8 +57,8 @@ body {
     height: 50px;
     width: 400px;
     align-items: center;
-    border: 3px solid white;
-    animation: bounceIn 3s ease-in-out;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
     animation-play-state: running; 
     animation-fill-mode:none; 
   }
@@ -74,7 +75,7 @@ body {
     height: 150px;
     width: 150px;
     align-items: center;
-    border: 3px solid white;
+    border: 10px solid #f1ac40;
     animation: bounceIn 3.5s ease-in-out;
     animation-play-state: running; 
     animation-fill-mode:none; 
@@ -92,8 +93,8 @@ body {
     height: 100px;
     width: 300px;
     align-items: center;
-    border: 3px solid white;
-    animation: bounceIn 4s ease-in-out;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
     animation-play-state: running; 
     animation-fill-mode:none; 
   }
@@ -101,12 +102,31 @@ body {
   .Camp05:hover {
     background-color: #d05171;
     color: white;
-  }
+
+    animation: lookOut;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.6, 0.87, 0.59, 0.46);
+    animation-delay: 0s;
+    }
+    
+@keyframes lookOut {
+      0% {
+        transform: scale(1);
+      }
+    
+      50% {
+        transform: scale(1.7);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
 
   
 @keyframes bounceIn { 
     0% {
-      transform: scale(0.1);
+      transform: scale(0.2);
     }
     50%{
       transform: scale (1.4);
