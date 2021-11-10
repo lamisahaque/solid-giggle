@@ -21,7 +21,7 @@ body {
     align-items: center;
     border: 10px solid #f1ac40;
     animation: bounceIn 3.5s ease-in-out;
-    animation-play-state: paused; 
+    animation-play-state:running; 
   
     animation-fill-mode:none; 
 
