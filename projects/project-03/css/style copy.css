@@ -1,0 +1,133 @@
+
+div {
+  width: 600px;
+  margin: auto;
+  align-items: center;
+ }
+
+body {
+    background-color: #f1ac40;
+    align-items: center;
+
+}
+
+
+.Camp01 {
+    padding: 15px;
+    display: grid;
+    background-color: #a7aec0;
+    height: 120px;
+    width: 400px;
+    align-items: center;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
+    animation-play-state:running; 
+  
+    animation-fill-mode:none; 
+
+  }
+
+  .Camp01:hover {
+    background-color: #d05171;
+    color: white;
+  }
+
+.Camp02 {
+    padding: 15px;
+    display: grid;
+    background-color: #a7aec0;
+    height: 80px;
+    width: 600px;
+    align-items: center;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
+    animation-play-state: running; 
+    animation-fill-mode:none; 
+  }
+
+  .Camp02:hover {
+    background-color: #d05171;
+    color: white;
+  }
+
+.Camp03 {
+    padding: 15px;
+    display: grid;
+    background-color: #a7aec0;
+    height: 50px;
+    width: 400px;
+    align-items: center;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
+    animation-play-state: running; 
+    animation-fill-mode:none; 
+  }
+
+  .Camp03:hover {
+    background-color: #d05171;
+    color: white;
+  }
+
+.Camp04 {
+    padding: 15px;
+    display: grid;
+    background-color: #a7aec0;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
+    animation-play-state: running; 
+    animation-fill-mode:none; 
+  }
+
+  .Camp04:hover {
+    background-color: #d05171;
+    color: white;
+  }
+
+.Camp05 {
+    padding: 15px;
+    display: grid;
+    background-color: #a7aec0;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    border: 10px solid #f1ac40;
+    animation: bounceIn 3.5s ease-in-out;
+    animation-play-state: running; 
+    animation-fill-mode:none; 
+  }
+
+  .Camp05:hover {
+    background-color: #d05171;
+    color: white;
+
+    animation: lookOut;
+    animation-duration: 3.5s;
+    animation-timing-function: cubic-bezier(0.6, 0.87, 0.59, 0.46);
+    animation-delay: 0s;
+    }
+    
+@keyframes lookOut {
+      0% {
+        transform: scale(1);
+      }
+    
+      50% {
+        transform: scale(1.7);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
+
+  
+@keyframes bounceIn { 
+    0% {
+      transform: scale(0.2);
+    }
+    50%{
+      transform: scale (1.4);
+    }
