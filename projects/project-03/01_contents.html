@@ -1,112 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      html,
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-      .wrapper {
-        padding: 50px 50px;
-        max-width: 1200px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .container {
-        width: 45%;
-        margin: 20px;
-        height: 300px;
-        border: 3px solid #eee;
-        overflow: hidden;
-        position: relative;
-        float: left;
-        display: inline-block;
-        cursor: pointer;
-      }
-      .child {
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        -o-transition: all .5s;
-        transition: all .5s;
-      }
-      .bg-one {
-        background-image: url(https://media.npr.org/assets/img/2021/03/22/gettyimages-1129525024-7bc78116d2d77b37b67b22a6713d3d84ac75d0d3.jpg);
-      }
-      .bg-two {
-        background-image: url(https://w3docs.com/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg);
-      }
-      span {
-        display: none;
-        font-size: 35px;
-        color: #ffffff !important;
-        font-family: sans-serif;
-        text-align: center;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 50px;
-        cursor: pointer;
-        text-decoration: none;
-      }
-      .container:hover .child,
-      .container:focus .child {
-        -ms-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
-      }
-      .container:hover .child:before,
-      .container:focus .child:before {
-        display: block;
-      }
-      .container:hover span,
-      .container:focus span {
-        display: block;
-      }
-      .child:before {
-        content: "";
-        display: none;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(52, 73, 94, 0.75);
-      }
-      @media screen and (max-width: 960px) {
-        .container {
-          width: 100%;
-          margin: 20px 0;
-        }
-        .wrapper {
-          padding: 20px;
-        }
-      }
-    </style>
-  </head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Refugee Camps</title>
+    <link rel="stylesheet" href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\style.css">
+   
+</head>
+
+  <nav>
+    <ul>
+      <li>
+        <a>Home</a>
+        <ul>
+          <li><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\00_home.html">Globe</a></li>
+          <li><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\02_zaatari.html">Zaatari</a></li>
+          <li><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\03_Kutupalong.html">Kutupalong</a></li>
+          <li><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\04_Kakuma.html">Kakuma</a></li>
+          <li><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\05_Dadaab.html">Dadaab</a></li>
+          <li><a href=https://lamisahaque.github.io/solid-giggle>Hello World!</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
   <body>
     <p><h1>World's Largest Refugee Camps in 2021</h1></p>
     <div class="wrapper">
+      
       <div class="container">
         <div class="child bg-one">
-          <span>London</span>
+          <span><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\02_zaatari.html"> Zaatari</span>
         </div>
       </div>
+      
       <div class="container">
         <div class="child bg-two">
-          <span>New York</span>
+          <span><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\03_Kutupalong.html"> Kutupalong</span>
         </div>
       </div>
+          
+      <div class="globe"><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\00_home.html">
+        <img src="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\assets\globe.png" width="250" height="180"></a>
+      </div>
+    
+      <div class="container">
+        <div class="child bg-three">
+          <span><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\04_Kakuma.html"> Kakuma</span>
+        </div>
+      </div>
+          
+      <div class="container">
+        <div class="child bg-four">
+          <span><a href="C:\Users\lamis\Desktop\COLUMBIA\FALL 21\Coding for Spatial Practices\solid-giggle\projects\project-03\05_Dadaab.html"> Dadaab</span>
+        </div>
+      </div>
+
     </div>
+ 
   </body>
 </html>

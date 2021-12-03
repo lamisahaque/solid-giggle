@@ -1,30 +1,254 @@
 
 
-nav {
-  background-color: lightgray;
-  text-decoration: none;
-   color: white;
-   font-size: 15px;
-   padding: 15px;
-   display:inline-block;
+    nav {
+      
+      text-decoration: none;
+      color: grey;
+      font-size: 15px;
+      padding: 45px;
+      display:inline-block;
+    }
+    ul {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {display: inline-block;}
+    ul li:hover {background: rgb(133, 133, 133);}
+    ul li:hover ul {display: block;}
+    ul li ul {
+      position: absolute;
+      width: 200px;
+      display: none;
+    }
+    ul li ul li { 
+      background: rgb(134, 134, 134); 
+      display: block; 
+    }
+    ul li ul li a {display:block !important;} 
+    ul li ul li:hover {background: rgb(133, 133, 133);}
 
- ul {
-   display: inline;
-   margin: 0;
-   padding: 0;
- }
- ul li {display: inline-block;}
- ul li:hover {background: rgb(133, 133, 133);}
- ul li:hover ul {display: block;}
- ul li ul {
-   position: absolute;
-   width: 200px;
-   display: none;
- }
- ul li ul li { 
-   background: rgb(134, 134, 134); 
-   display: block; 
- }
- ul li ul li a {display:block !important;} 
- ul li ul li:hover {background: #666;}
+
+body{
+background-color: white;
+}
+
+.wrapper {
+  padding: 50px 50px;
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 45%;
+  margin: 20px;
+  height: 300px;
+  border: 3px solid #eee;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.bg-one {
+  background-image: url(https://www.al-monitor.com/sites/default/files/styles/article_header/public/almpics/2017/11-1/IMG-20171113-WA0005.jpg/IMG-20171113-WA0005.jpg?h=a5ae579a&itok=FnhiIDXj);
+}
+.bg-two {
+  background-image: url(https://media.npr.org/assets/img/2021/03/22/gettyimages-1129525024-7bc78116d2d77b37b67b22a6713d3d84ac75d0d3.jpg);
+}
+span {
+  display: none;
+  font-size: 35px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container:hover .child,
+.container:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.container:hover .child:before,
+.container:focus .child:before {
+  display: block;
+}
+.container:hover span,
+.container:focus span {
+  display: block;
+}
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+}
+
+<div class="wrapper">
+<div class="container">
+  <div class="child bg-one">
+    <span>Zaatari</span>
+  </div>
+</div>
+<div class="container">
+  <div class="child bg-two">
+    <span>Kutupalong</span>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+h1 {
+  text-align:center;
+  size: 20px;
+}
+
+.wrapper {
+  padding: 50px 50px;
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 45%;
+  margin: 20px;
+  height: 300px;
+  border: 3px solid #eee;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.bg-three {
+  background-image: url(https://i.guim.co.uk/img/media/a6b85c100c99ad7aeef695dd749eae830b8d9c36/0_15_4800_2882/master/4800.jpg?width=700&quality=85&auto=format&fit=max&s=b6c241e488dedaadd8256b4b736607e9);
+}
+.bg-four {
+  background-image: url(https://www.unhcr.org/innovation/wp-content/uploads/2015/05/Dadaab2-1080x675.jpg);
+}
+span {
+  display: none;
+  font-size: 35px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container:hover .child,
+.container:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.container:hover .child:before,
+.container:focus .child:before {
+  display: block;
+}
+.container:hover span,
+.container:focus span {
+  display: block;
+}
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .wrapper {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<p>Hover over the images to see the effect.</p>
+<div class="wrapper">
+<div class="container">
+  <div class="child bg-three">
+    <span>Kakuma</span>
+  </div>
+</div>
+<div class="container">
+  <div class="child bg-four">
+    <span>Dadaab</span>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
 }
