@@ -3,6 +3,16 @@ nav {
     height: 60px;
     box-sizing: border-box;
 }
+
+.ex{
+    color: gold;
+}
+
+.project{
+    color: palevioletred;
+}
+
+
  .container {
      display: flex;
      justify-content: space-around;
