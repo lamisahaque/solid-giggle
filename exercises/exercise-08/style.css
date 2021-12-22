@@ -1,69 +1,75 @@
 body {
-    margin: 3em;
-    padding: 0;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-  }
+  margin: 3em;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  ;
+}
+
+h1 {
+  line-height: 1.25;
+  margin: 2em 0 0;
+}
+p {
+  margin: 0.5em 0;
+}
+
+#switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#switcher li {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 25px 25px 0;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+/* button colors */
+
+#redButton {
+  background-color: #ff0000;
   
-  h1 {
-    line-height: 1.25;
-    margin: 2em 0 0;
-  }
-  p {
-    margin: 0.5em 0;
-  }
+}
+
+#greenButton {
+  background: #008000;
   
-  #switcher {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  #switcher li {
-    float: left;
-    width: 30px;
-    height: 30px;
-    margin: 0 15px 15px 0;
-    border-radius: 30px;
-    border: 3px solid black;
-  }
+}
+
+#blueButton {
+  background: #0000ff;
   
-  /* button colors */
+}
+
+#yellowButton {
+  background: #ffff00;
   
-  #grayButton {
-    background-color: gray;
-  }
-  
-  #whiteButton {
-    background: white;
-  }
-  
-  #blueButton {
-    background: blue;
-  }
-  
-  #yellowButton {
-    background: yellow;
-  }
-  
-  /* background colors */
-  
-  .gray-theme {
-    background-color: grey;
-  }
-  
-  .white-theme {
-    background-color: white;
-  }
-  
-  .yellow-theme {
-    background-color: yellow;
-  }
-  
-  .blue-theme {
-    background-color: blue;
-    /*   change text to white */
-    color: white;
-  }
-  
+}
+
+/* background colors */
+
+.redScheme {
+  background-color: red;
+
+}
+
+.greenScheme {
+  background-color: green;
+
+}
+
+.yellowScheme {
+  background-color: yellow;
+
+}
+
+.blueScheme {
+  background-color: blue;
+
+}

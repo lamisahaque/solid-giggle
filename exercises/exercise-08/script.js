@@ -1,51 +1,49 @@
 /* 
-
-Instructions: when a user clicks on one of the colored dots, the    background color of the entire page changes to match that dot. You should not need to change any HTML or CSS. 
-
+Instructions: when a user clicks on one of the colored dots, the background color of the entire page changes to match that dot. You should not need to change any HTML or CSS. 
 Hint: Classes for each color have already been defined in the CSS tab.
-
 */
+let text = document.querySelector("body");
 
-// 1 -- Select each circle
-let grayCircle = document.getElementById("grayButton");
-let whiteCircle = document.getElementById("whiteButton");
-let blueCircle = document.getElementById("blueButton");
-let yellowCircle = document.getElementById("yellowButton");
-
-let body = document.querySelector("body");
-
-// 2 -- Add an event listener to each circle
-yellowCircle.addEventListener("click", turnYellow);
-blueCircle.addEventListener("click", turnBlue);
-whiteCircle.addEventListener("click", turnWhite);
-grayCircle.addEventListener("click", turnGray);
+// 1 -- Select the parent of the items you want to click
+let circles = document.querySelector("ul");
+console.log(circles);
 
 // 3 -- Write an event handler to change the color of the page when each circle is pressed.
-function turnGray() {
-  console.log("gray button");
-
-  body.style.backgroundColor = "gray";
-  body.style.color = "white";
-  // body.classList.add("gray-theme");
+function changeBackgroundColor(event) {
+  console.log(event.target);
 }
 
-function turnWhite() {
-  console.log("white button");
-  body.style.backgroundColor = "white";
-  body.style.color = "black";
-  // body.classList.add("white-theme");
+// 2 -- Add an event listener to each circle
+circles.addEventListener("click", changeBackgroundColor);
+
+
+
+let redButton = document.getElementById("redButton");
+let greenButton = document.getElementById("greenButton");
+let blueButton = document.getElementById("blueButton");
+let yellowButton = document.getElementById("yellowButton");
+
+function redScheme() {
+  document.body.style.backgroundColor = "#ff0000";
+  document.getElementById("text").style.color = "#ff0000";
 }
 
-function turnBlue() {
-  console.log("blue button");
-  body.style.backgroundColor = "blue";
-  body.style.color = "white";
-  // body.classList.add("blue-theme");
+function greenScheme() {
+  document.body.style.backgroundColor = "#008000";
+  document.getElementById("text").style.color = "#008000";
 }
 
-function turnYellow() {
-  console.log("yellow button");
-  body.style.backgroundColor = "yellow";
-  body.style.color = "black";
-  // body.classList.add("yellow-theme");
+function blueScheme() {
+  document.body.style.backgroundColor = "#0000ff";
+  document.getElementById("text").style.color = "#0000ff";
 }
+
+function yellowScheme() {
+  document.body.style.backgroundColor = "#ffff00";
+  document.getElementById("text").style.color = "#ffff00";
+}
+
+redButton.addEventListener("click", redScheme);
+greenButton.addEventListener("click", greenScheme);
+blueButton.addEventListener("click", blueScheme);
+yellowButton.addEventListener("click", yellowScheme);
