@@ -24,23 +24,23 @@ let blueButton = document.getElementById("blueButton");
 let yellowButton = document.getElementById("yellowButton");
 
 function redScheme() {
-  document.body.style.backgroundColor = "#ff0000";
-  document.getElementById("text").style.color = "#ff0000";
+  document.body.style.backgroundColor = "#ffaaaa";
+  document.getElementById("text").style.color = "#ffaaaa";
 }
 
 function greenScheme() {
-  document.body.style.backgroundColor = "#008000";
-  document.getElementById("text").style.color = "#008000";
+  document.body.style.backgroundColor = "rgb(176, 255, 176)";
+  document.getElementById("text").style.color = "rgb(176, 255, 176)";
 }
 
 function blueScheme() {
-  document.body.style.backgroundColor = "#0000ff";
-  document.getElementById("text").style.color = "#0000ff";
+  document.body.style.backgroundColor = "rgb(170, 235, 255)";
+  document.getElementById("text").style.color = "rgb(170, 235, 255)";
 }
 
 function yellowScheme() {
-  document.body.style.backgroundColor = "#ffff00";
-  document.getElementById("text").style.color = "#ffff00";
+  document.body.style.backgroundColor = "rgb(255, 255, 162)";
+  document.getElementById("text").style.color = "rgb(255, 255, 162)";
 }
 
 redButton.addEventListener("click", redScheme);
