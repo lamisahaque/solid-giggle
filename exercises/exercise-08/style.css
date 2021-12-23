@@ -52,6 +52,11 @@ p {
   
 }
 
+#resetButton {
+  background: rgb(255, 255, 255);
+  
+}
+
 /* background colors */
 
 .redScheme {
@@ -72,4 +77,9 @@ p {
 .blueScheme {
   background-color: rgb(170, 235, 255);
 
+}
+
+.resetScheme {
+  background-color: rgb(255, 255, 255);
+  
 }

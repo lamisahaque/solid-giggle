@@ -1,5 +1,6 @@
 /* 
-Instructions: when a user clicks on one of the colored dots, the background color of the entire page changes to match that dot. You should not need to change any HTML or CSS. 
+Instructions: when a user clicks on one of the colored dots, the background color of the entire page changes to match that dot. You should
+ not need to change any HTML or CSS. 
 Hint: Classes for each color have already been defined in the CSS tab.
 */
 let text = document.querySelector("body");
@@ -22,6 +23,7 @@ let redButton = document.getElementById("redButton");
 let greenButton = document.getElementById("greenButton");
 let blueButton = document.getElementById("blueButton");
 let yellowButton = document.getElementById("yellowButton");
+let resetButton = document.getElementById("resetButton");
 
 function redScheme() {
   document.body.style.backgroundColor = "#ffaaaa";
@@ -43,7 +45,13 @@ function yellowScheme() {
   document.getElementById("text").style.color = "rgb(255, 255, 162)";
 }
 
+function resetScheme() {
+  document.body.style.bagroundColor = "rgb(255, 255, 255)";
+  document.getElementById("text").style.color = "rgb(255, 255, 255)";
+}
+
 redButton.addEventListener("click", redScheme);
 greenButton.addEventListener("click", greenScheme);
 blueButton.addEventListener("click", blueScheme);
 yellowButton.addEventListener("click", yellowScheme);
+resetButton.addEventListener("click", resetScheme);
