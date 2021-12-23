@@ -56,7 +56,6 @@ nav {
   border: 3px solid #eee;
   overflow: visible;
   position: relative;
-  float: left;
   display: inline-block;
   cursor: pointer;
 }
