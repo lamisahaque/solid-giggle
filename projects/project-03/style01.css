@@ -1,12 +1,12 @@
-body {
+head {
   font-family: system-ui;
     color: lightslategray;
-  text-align: center;
-background-color: white;
-margin: 0px;
-padding: 0px;
-}
+text-align: center;
+    background-color: white;
+margin: auto;
+padding: auto;
 
+}
 
 h1 {
   text-align:center;
@@ -116,10 +116,7 @@ a:hover{
 .container:focus .child:before {
   display: block;
 }
-.container:hover span,
-.container:focus span {
-  display: block;
-}
+
 .child:before {
   text-decoration: none;
   color: inherit; 
@@ -130,6 +127,10 @@ a:hover{
   top: 0;
   left: 0;
   background-color: rgba(52, 73, 94, 0.75);
+}
+.container:hover span,
+.container:focus span {
+  display: block;
 }
 @media screen and (max-width: 960px) {
   .container {
